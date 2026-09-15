@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rian Hidayat - Professional Server & Hospitality Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="#home" class="logo" aria-label="Rian Hidayat Portfolio"
+          >Rian<span>.</span></a
+        >
+
+        <button
+          class="menu-toggle"
+          id="mobile-btn"
+          type="button"
+          aria-label="Toggle Menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav-links" id="nav-menu">
+          <a href="#home" class="active-link" data-i18n="nav_home">Beranda</a>
+          <a href="#about" data-i18n="nav_about">Tentang</a>
+          <a href="#experience" data-i18n="nav_experience">Pengalaman</a>
+          <a href="#skills" data-i18n="nav_skills">Keahlian</a>
+          <a href="#certificates" data-i18n="nav_certificates">Sertifikat</a>
+          <a href="#contact" data-i18n="nav_contact">Kontak</a>
+
+          <div class="lang-switch">
+            <button
+              class="lang-btn active"
+              onclick="changeLanguage('id')"
+              id="btn-id"
+            >
+              ID
+            </button>
+            <button class="lang-btn" onclick="changeLanguage('en')" id="btn-en">
+              EN
+            </button>
+            <button class="lang-btn" onclick="changeLanguage('ko')" id="btn-ko">
+              KO
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text reveal">
+            <p
+              style="
+                color: var(--secondary);
+                font-weight: 600;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+              "
+              data-i18n="hero_greeting"
+            >
+              HALO, SAYA
+            </p>
+            <h1>
+              <span style="color: #fff; display: inline" data-i18n="hero_name"
+                >Rian Hidayat</span
+              >
+              <span data-i18n="hero_role">Professional Server</span>
+            </h1>
+            <p data-i18n="hero_desc">
+              Berdedikasi untuk memberikan pengalaman bersantap yang tak
+              terlupakan melalui layanan berstandar tinggi (hospitality) dan
+              komunikasi yang efektif.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary" data-i18n="btn_hire"
+                >Hubungi Saya</a
+              >
+              <a
+                href="assets/cv/Rian_Hidayat_CV.pdf"
+                target="_blank"
+                class="btn btn-outline"
+                style="color: #fff; border-color: #fff"
+                data-i18n="btn_cv"
+                >Lihat / Unduh CV</a
+              >
+            </div>
+          </div>
+          <div class="hero-image reveal">
+            <div class="img-wrapper">
+              <img
+                src="assets/image/profil.jpeg"
+                alt="Rian Hidayat - Professional Server"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="text-center reveal">
+            <h2 class="section-title" data-i18n="about_title">Tentang Saya</h2>
+            <p class="section-subtitle" data-i18n="about_subtitle">
+              Mengenal lebih dekat dedikasi dan perjalanan karir saya di
+              industri restoran.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-image-card reveal">
+              <h3
+                style="font-size: 1.8rem; margin-bottom: 16px"
+                data-i18n="about_card_title"
+              >
+                Filosofi Pelayanan
+              </h3>
+              <p
+                style="
+                  font-style: italic;
+                  color: var(--text-muted);
+                  font-size: 1.1rem;
+                  line-height: 1.8;
+                "
+                data-i18n="about_card_desc"
+              >
+                "Pelayanan bukan hanya tentang mengantarkan makanan, tetapi
+                menciptakan momen yang membuat tamu merasa dihargai dan ingin
+                kembali."
+              </p>
+              <div class="about-stats">
+                <div class="stat-item">
+                  <h4>99%</h4>
+                  <p data-i18n="about_stat1">Kepuasan Pelanggan</p>
+                </div>
+                <div class="stat-item">
+                  <h4>4+</h4>
+                  <p data-i18n="about_stat2">Tahun di F&B</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-text reveal">
+              <p data-i18n="about_p1">
+                Saya <b>Rian Hidayat</b>, seorang profesional di bidang
+                <i>Food & Beverage</i> dengan fokus pada <i>hospitality</i>.
+                Saya memiliki rekam jejak yang kuat dalam memastikan kelancaran
+                operasional restoran mulai dari penyambutan tamu, pengambilan
+                pesanan yang akurat, hingga penyajian hidangan berstandar
+                tinggi.
+              </p>
+              <p data-i18n="about_p2">
+                Mampu bekerja sama dalam tim maupun individu di bawah tekanan
+                lingkungan kerja yang serba cepat. Saya sangat berorientasi pada
+                detail terutama terhadap kebersihan area bersantap dan standar
+                penyajian.
+              </p>
+
+              <div class="info-list">
+                <div class="info-item">
+                  <i class="fas fa-user-tie"></i>
+                  <span data-i18n="about_info_job">Server Profesional</span>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span data-i18n="about_info_loc"
+                    >Bantul, Yogyakarta, Indonesia</span
+                  >
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-language"></i>
+                  <span data-i18n="about_info_lang"
+                    >Indonesia, English, Korean</span
+                  >
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-clock"></i>
+                  <span data-i18n="about_info_avail">Full-time / Shift</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section
+        id="experience"
+        class="section"
+        style="background: var(--bg-card)"
+      >
+        <div class="container">
+          <div class="text-center reveal">
+            <h2 class="section-title" data-i18n="exp_title">
+              Pengalaman Kerja
+            </h2>
+            <p class="section-subtitle" data-i18n="exp_subtitle">
+              Jejak langkah karir profesional saya di industri kuliner.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <!-- Pekerjaan 1 -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date" data-i18n="exp1_date"
+                  >09 September 2024 - 27 Februari 2025</span
+                >
+                <h3 class="timeline-title" data-i18n="exp1_role">Server</h3>
+                <span class="timeline-company" data-i18n="exp1_company"
+                  >GIOI GRUP</span
+                >
+                <p data-i18n="exp1_desc">
+                  Melayani pelanggan dengan standar hospitality tinggi,
+                  memastikan pesanan akurat, dan menjaga kebersihan area
+                  restoran.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pekerjaan 2 -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date" data-i18n="exp2_date"
+                  >22 Maret 2022 - 31 Agustus 2024</span
+                >
+                <h3 class="timeline-title" data-i18n="exp2_role">Server</h3>
+                <span class="timeline-company" data-i18n="exp2_company"
+                  >HONG YUN HOT POT</span
+                >
+                <p data-i18n="exp2_desc">
+                  Bertanggung jawab menyambut tamu, mencatat pesanan, dan
+                  mengantarkan makanan secara efisien. Menguasai sistem POS
+                  dengan cepat dan menangani keluhan pelanggan dengan tenang.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pekerjaan 3 -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date" data-i18n="exp3_date"
+                  >03 Juli 2021 - 28 Februari 2022</span
+                >
+                <h3 class="timeline-title" data-i18n="exp3_role">Runner</h3>
+                <span class="timeline-company" data-i18n="exp3_company"
+                  >MAO JIA CAI</span
+                >
+                <p data-i18n="exp3_desc">
+                  Mengantarkan makanan dari dapur ke meja pelanggan dengan cepat
+                  dan tepat, serta membantu kebutuhan operasional restoran.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="text-center reveal">
+            <h2 class="section-title" data-i18n="skills_title">
+              Keahlian Profesional
+            </h2>
+            <p class="section-subtitle" data-i18n="skills_subtitle">
+              Kompetensi utama yang mendukung kualitas pelayanan saya.
+            </p>
+          </div>
+
+          <div class="skills-grid reveal">
+            <div class="skill-card">
+              <i class="fas fa-wine-glass-alt skill-icon"></i>
+              <h4 class="skill-title" data-i18n="skill_1">Alkohol Service</h4>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-users skill-icon"></i>
+              <h4 class="skill-title" data-i18n="skill_2">Team Work</h4>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-star skill-icon"></i>
+              <h4 class="skill-title" data-i18n="skill_3">Priority Service</h4>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-award skill-icon"></i>
+              <h4 class="skill-title" data-i18n="skill_4">Excellent</h4>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-cash-register skill-icon"></i>
+              <h4 class="skill-title" data-i18n="skill_5">Cashier</h4>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-mug-hot skill-icon"></i>
+              <h4 class="skill-title" data-i18n="skill_6">Barista</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATES -->
+      <section
+        id="certificates"
+        class="section"
+        style="background: var(--bg-card)"
+      >
+        <div class="container">
+          <div class="text-center reveal">
+            <h2 class="section-title" data-i18n="cert_title">
+              Sertifikat & Penghargaan
+            </h2>
+            <p class="section-subtitle" data-i18n="cert_subtitle">
+              Bukti kompetensi dan prestasi yang saya miliki.
+            </p>
+          </div>
+
+          <div class="cert-grid reveal">
+            <!-- Sertifikat 2 -->
+            <div class="cert-card">
+              <i class="fas fa-trophy cert-icon"></i>
+              <h4 class="cert-title" data-i18n="cert_2_title">
+                GOOD LUCK HOT POT RESTAURANT
+              </h4>
+              <a
+                href="assets/certificates/sertifikat-2.pdf"
+                target="_blank"
+                class="cert-link"
+              >
+                <i class="fas fa-eye"></i>
+                <span data-i18n="btn_view_cert">Lihat Sertifikat</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="text-center reveal">
+            <h2 class="section-title" data-i18n="contact_title">
+              Hubungi Saya
+            </h2>
+            <p class="section-subtitle" data-i18n="contact_subtitle">
+              Tertarik untuk bekerja sama? Mari diskusikan peluang yang ada.
+            </p>
+          </div>
+
+          <div class="contact-container reveal">
+            <div class="contact-info">
+              <h3 data-i18n="contact_info_title">Informasi Kontak</h3>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h5 data-i18n="contact_lbl_email">Email</h5>
+                  <p>tompolasadulu@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h5 data-i18n="contact_lbl_phone">Telepon / WA</h5>
+                  <p>082326906690</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-instagram"></i>
+                <div>
+                  <h5 data-i18n="contact_lbl_instagram">Instagram</h5>
+                  <p>
+                    <a
+                      href="https://instagram.com/rieeean_"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="contact-link"
+                    >
+                      @rieeean_
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <h2 style="color: #fff; margin-bottom: 8px">
+          Rian<span style="color: var(--secondary)">.</span>
+        </h2>
+        <p style="color: rgba(255, 255, 255, 0.6)" data-i18n="hero_role">
+          Professional Server
+        </p>
+
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/rieeean_?stkn=MXd1NWdvYWZwZ291Yg%3D%3D&utm_source=qr"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/share/1JLLyR546a/?mibextid=wwXIfr"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://wa.me/6282326906690" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+
+        <p
+          style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.4)"
+          data-i18n="footer_copy"
+        >
+          &copy; 2024 Rian Hidayat. Design by
+          <Velojasweb class="id">velojasweb.id</Velojasweb>
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
